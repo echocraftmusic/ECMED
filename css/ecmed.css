@@ -1,0 +1,238 @@
+:root{--navy:#061d46;--royal:#0d49c7;--cream:#fbf6ec;--ivory:#fffdf8;--gold:#c9972f;--gold2:#f0c86c;--ink:#091b3a;--muted:#69758b;--line:rgba(201,151,47,.28);--side:268px;--foot:78px;--top:66px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#061d46;color:var(--ink);font-family:Manrope,Arial,sans-serif;overflow:hidden}a{color:inherit;text-decoration:none}.side-rail{position:fixed;z-index:40;inset:0 auto 0 0;width:var(--side);padding:22px 14px calc(var(--foot) + 18px);display:flex;flex-direction:column;background-image:url('../images/ecmed/sidebar-texture.png');background-size:cover;background-position:center;color:white;border-right:1px solid rgba(240,200,108,.62);box-shadow:15px 0 50px rgba(3,19,51,.18)}.brand{display:flex;align-items:center;gap:12px;padding:4px 8px 23px;border-bottom:1px solid rgba(255,255,255,.22)}.brand-mark{width:48px;height:48px;border:1px solid var(--gold2);border-radius:50%;display:grid;place-items:center;font-family:Cormorant Garamond;font-size:32px;color:white;background:rgba(0,20,58,.18);box-shadow:inset 0 0 20px rgba(255,255,255,.06)}.brand-copy strong{display:block;font-family:Cormorant Garamond;font-size:30px;line-height:.9}.brand-copy small{display:block;color:var(--gold2);font-weight:800;font-size:9px;letter-spacing:3px;margin-top:7px}.side-nav{display:flex;flex-direction:column;margin-top:10px}.side-nav a{position:relative;display:flex;align-items:center;gap:14px;padding:15px 16px;border-bottom:1px solid rgba(255,255,255,.17);font-weight:700;font-size:15px;text-shadow:0 1px 8px rgba(0,0,0,.68);background:linear-gradient(90deg,rgba(0,18,52,.34),rgba(0,18,52,.08));transition:.25s}.side-nav a span{font-size:18px;color:white}.side-nav a:hover,.side-nav a.active{color:var(--gold2);padding-left:22px;background:linear-gradient(90deg,rgba(2,25,66,.82),rgba(2,25,66,.25));box-shadow:inset 4px 0 var(--gold2)}.side-cta{margin-top:auto;padding:15px;border:1px solid rgba(240,200,108,.65);border-radius:12px;background:rgba(1,20,52,.72);backdrop-filter:blur(3px)}.side-cta small,.side-cta strong{display:block}.side-cta small{font-size:9px;font-weight:800;letter-spacing:1.6px;color:var(--gold2)}.side-cta strong{font-family:Cormorant Garamond;font-size:18px;margin:5px 0 12px}.side-cta a{display:block;padding:11px 10px;text-align:center;background:linear-gradient(135deg,#b88220,#efc55e);color:white;font-weight:800;font-size:11px;border-radius:6px}.site-shell{margin-left:var(--side);height:100vh;background:var(--cream)}.topbar{height:var(--top);position:fixed;top:0;right:0;left:var(--side);z-index:30;display:flex;align-items:center;justify-content:space-between;padding:0 34px;background:rgba(255,253,248,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}.top-links{display:flex;gap:30px;font-size:13px;font-weight:700}.top-links a:hover{color:var(--gold)}.top-actions{display:flex;align-items:center;gap:25px;font-size:13px;font-weight:800}.top-book{background:linear-gradient(135deg,var(--navy),var(--royal));color:white;padding:12px 18px;border-radius:5px;box-shadow:0 8px 20px rgba(13,73,199,.16)}.scroll-stage{position:fixed;left:var(--side);right:0;top:var(--top);bottom:var(--foot);overflow-y:auto;overflow-x:hidden;background:linear-gradient(145deg,#fffdf8,#f7efe3)}.hero{min-height:550px;display:grid;grid-template-columns:42% 58%;position:relative;border-bottom:1px solid var(--line)}.hero-copy{padding:70px 48px 55px;display:flex;flex-direction:column;justify-content:center}.eyebrow{color:#b57e15;font-size:11px;letter-spacing:2.2px;font-weight:800;margin:0 0 13px}.hero h1,.section-intro h2,.doctor-copy h2,.feature-panel h2,.contact-section h2{font-family:Cormorant Garamond,Georgia,serif;font-weight:600}.hero h1{font-size:clamp(50px,5.4vw,84px);line-height:.9;letter-spacing:-2.6px;margin:0;color:var(--ink)}.hero h1 em{font-style:normal;color:var(--royal)}.gold-rule{width:64px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));margin:25px 0}.lead{max-width:520px;color:#47556c;font-size:17px;line-height:1.75;margin:0}.hero-actions{display:flex;gap:13px;margin-top:28px;flex-wrap:wrap}.btn-primary,.btn-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 21px;font-size:12px;font-weight:800;letter-spacing:.25px;border-radius:5px}.btn-primary{background:linear-gradient(135deg,var(--navy),var(--royal));color:white;box-shadow:0 12px 28px rgba(13,73,199,.17)}.btn-primary b{font-size:21px;color:var(--gold2);margin-left:12px}.btn-secondary{border:1px solid var(--gold);color:#9c6a10;background:rgba(255,255,255,.54)}.hero-visual{position:relative;overflow:hidden;clip-path:ellipse(88% 100% at 100% 50%);border-left:2px solid var(--gold)}.hero-visual img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(251,246,236,.18),transparent 30%)}.hero-badge{position:absolute;right:7%;top:11%;z-index:2;padding:14px 18px;border:1px solid rgba(240,200,108,.7);background:rgba(5,25,62,.85);color:white;display:grid;grid-template-columns:auto auto;gap:0 10px;align-items:center;box-shadow:0 16px 45px rgba(0,0,0,.18)}.badge-mark{grid-row:1/3;width:38px;height:38px;border:1px solid var(--gold2);border-radius:50%;display:grid;place-items:center;font-size:25px}.hero-badge strong{font-family:Cormorant Garamond;font-size:24px}.hero-badge small{font-size:8px;color:var(--gold2);letter-spacing:2px}.quick-paths{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:0 38px;transform:translateY(-26px);position:relative;z-index:4}.quick-paths>a{display:grid;grid-template-columns:58px 1fr auto;align-items:center;gap:14px;padding:20px;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:12px;box-shadow:0 15px 38px rgba(22,36,65,.09);transition:.25s}.quick-paths>a:hover{transform:translateY(-5px);box-shadow:0 22px 45px rgba(22,36,65,.14)}.path-icon{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--gold2);font-size:22px}.quick-paths strong{display:block;font-family:Cormorant Garamond;font-size:22px}.quick-paths small{display:block;color:var(--muted);line-height:1.45;margin-top:3px}.quick-paths b{color:var(--gold);font-size:28px}.services-section{display:grid;grid-template-columns:28% 72%;padding:45px 38px 62px;gap:28px}.section-intro{padding:26px 20px}.section-intro h2{font-size:42px;margin:0 0 15px}.section-intro>p:not(.eyebrow){color:var(--muted);line-height:1.7}.section-intro a,.text-link,.feature-panel a{display:inline-block;color:var(--navy);font-weight:800;font-size:12px;margin-top:14px}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.service-card{padding:24px 20px;border:1px solid var(--line);background:rgba(255,255,255,.62);border-radius:11px;min-height:185px;transition:.25s}.service-card:hover{transform:translateY(-4px);background:white;box-shadow:0 17px 36px rgba(23,38,65,.08)}.service-card span{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--gold2);font-size:18px}.service-card h3{font-family:Cormorant Garamond;font-size:23px;margin:15px 0 5px}.service-card p{color:var(--muted);line-height:1.55;font-size:13px}.trust-band{display:grid;grid-template-columns:repeat(4,1fr);background:linear-gradient(110deg,#052356,#073b87);color:white;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}.trust-band>div{padding:25px 26px;border-right:1px solid rgba(255,255,255,.2)}.trust-band strong{display:block;font-family:Cormorant Garamond;color:var(--gold2);font-size:28px}.trust-band small{display:block;margin-top:5px;line-height:1.45;color:#dbe6fb}.physician{display:grid;grid-template-columns:28% 43% 29%;padding:58px 38px;gap:28px;align-items:center}.doctor-photo{height:390px;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 25px 55px rgba(17,31,57,.15)}.doctor-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}.doctor-copy{padding:0 10px}.doctor-copy h2{font-size:45px;line-height:1.02;margin:0 0 18px}.doctor-copy>p:not(.eyebrow){color:var(--muted);line-height:1.75}.doctor-copy ul{padding-left:20px;color:#394861;line-height:1.9}.testimonial{padding:38px;background:var(--navy);color:white;border-radius:16px;border:1px solid var(--gold);box-shadow:0 18px 40px rgba(7,29,70,.18)}.testimonial span{font-family:Cormorant Garamond;color:var(--gold2);font-size:70px;line-height:.5}.testimonial p{font-family:Cormorant Garamond;font-size:25px;line-height:1.25}.testimonial strong{color:var(--gold2);font-size:12px}.feature-split{display:grid;grid-template-columns:1fr 1fr}.feature-panel{min-height:300px;padding:55px;background:#ece5d9}.feature-panel.tele{background:linear-gradient(130deg,#041b43,#0d49c7);color:white}.feature-panel.store{background:linear-gradient(130deg,#f0e1c9,#fffaf0)}.feature-panel h2{font-size:45px;line-height:1;margin:0 0 15px}.feature-panel p:not(.eyebrow){max-width:560px;line-height:1.7}.feature-panel.tele a{color:var(--gold2)}.contact-section{padding:65px 55px;display:flex;justify-content:space-between;align-items:center;gap:30px}.contact-section h2{font-size:48px;margin:0 0 10px}.contact-section p:not(.eyebrow){color:var(--muted)}.fixed-footer{position:fixed;z-index:31;left:var(--side);right:0;bottom:0;height:var(--foot);display:grid;grid-template-columns:180px 1.25fr 1fr 1fr;align-items:center;background:linear-gradient(100deg,#031735,#062d67);color:white;border-top:1px solid var(--gold);padding:0 24px}.fixed-footer>div{padding:0 18px;border-right:1px solid rgba(255,255,255,.16)}.footer-brand{display:flex;align-items:center;gap:10px;font-family:Cormorant Garamond;font-size:26px}.footer-brand span{width:35px;height:35px;border:1px solid var(--gold2);border-radius:50%;display:grid;place-items:center;color:var(--gold2)}.fixed-footer small{color:var(--gold2);font-weight:800;font-size:8px;letter-spacing:1.2px}.fixed-footer p{font-size:10px;margin:3px 0 0;color:#e6edf9}.mobile-menu{display:none}.reveal{opacity:0;transform:translateY(18px);transition:.75s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:1100px){:root{--side:220px}.top-links{gap:16px}.hero{grid-template-columns:48% 52%}.services-section{grid-template-columns:1fr}.section-intro{padding:0}.physician{grid-template-columns:34% 66%}.testimonial{grid-column:1/-1}.fixed-footer{grid-template-columns:150px 1fr 1fr}.fixed-footer>div:last-child{display:none}}
+@media(max-width:780px){body{overflow:auto;background:var(--cream)}:root{--top:64px;--foot:0px}.side-rail{transform:translateX(-102%);transition:.3s;width:min(86vw,330px);padding-bottom:25px}.side-rail.open{transform:none}.mobile-menu{display:flex;position:fixed;z-index:60;top:16px;right:16px;width:43px;height:38px;border:0;border-radius:6px;background:var(--navy);padding:9px;flex-direction:column;justify-content:space-between}.mobile-menu span{display:block;height:2px;background:white}.site-shell{margin:0;height:auto}.topbar{left:0;padding:0 72px 0 18px}.top-links{display:none}.top-actions>a:first-child{display:none}.top-book{padding:10px 12px;font-size:10px}.scroll-stage{position:relative;inset:auto;top:var(--top);overflow:visible;padding-bottom:var(--top)}.hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding:45px 22px 34px}.hero h1{font-size:56px}.hero-visual{height:360px;clip-path:none;border-left:0;border-top:2px solid var(--gold)}.hero-badge{top:20px;right:20px}.quick-paths{grid-template-columns:1fr;padding:18px 16px;transform:none}.services-section{padding:45px 18px}.services-grid{grid-template-columns:1fr}.trust-band{grid-template-columns:1fr 1fr}.trust-band>div:nth-child(2n){border-right:0}.physician{grid-template-columns:1fr;padding:45px 18px}.doctor-photo{height:440px}.doctor-copy h2,.feature-panel h2,.contact-section h2{font-size:40px}.feature-split{grid-template-columns:1fr}.feature-panel{padding:42px 24px}.contact-section{padding:48px 22px;display:block}.contact-section .btn-primary{margin-top:20px}.fixed-footer{display:none}}
+
+
+/* =========================================================
+   EC Med premium refinement — restrained reflective gold
+   ========================================================= */
+
+/* Give the desktop navigation more presence without crowding it. */
+.side-nav{margin-top:16px;gap:3px}
+.side-nav a{
+  gap:17px;
+  padding:18px 18px;
+  font-size:17px;
+  line-height:1.2;
+  letter-spacing:.15px;
+  border-bottom:1px solid rgba(240,200,108,.32);
+}
+.side-nav a span{font-size:20px;min-width:24px;text-align:center}
+.side-nav a:hover,.side-nav a.active{padding-left:25px}
+
+.side-cta{
+  padding:18px 16px;
+  text-align:center;
+  border-color:rgba(246,215,139,.82);
+  box-shadow:inset 0 1px rgba(255,255,255,.16),0 14px 30px rgba(0,17,51,.22);
+}
+.side-cta small{font-size:10px;letter-spacing:1.8px}
+.side-cta strong{font-size:20px;line-height:1.15;margin:7px 0 14px}
+.side-cta a{
+  min-height:46px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 13px;
+  font-size:12px;
+  line-height:1.2;
+  letter-spacing:.15px;
+  background:linear-gradient(112deg,#9b6813 0%,#d69f2c 28%,#f5d783 50%,#c68b1f 72%,#f0c967 100%);
+  color:#fff;
+  text-shadow:0 1px 4px rgba(75,42,0,.55);
+  box-shadow:inset 0 1px rgba(255,255,255,.48),0 8px 18px rgba(0,0,0,.18);
+}
+
+/* Larger, calmer top navigation. */
+.topbar{padding:0 38px}
+.top-links{gap:34px;font-size:15px}
+.top-actions{gap:27px;font-size:15px}
+.top-book{
+  padding:14px 24px;
+  font-size:13px;
+  letter-spacing:.2px;
+  box-shadow:0 9px 22px rgba(13,73,199,.20),inset 0 1px rgba(255,255,255,.18);
+}
+
+/* Reflective metal trim that follows the curved hero silhouette. */
+.hero-visual{
+  border-left:0;
+  filter:
+    drop-shadow(-2px 0 0 #f7df9a)
+    drop-shadow(-4px 0 0 #bd8120)
+    drop-shadow(-6px 0 0 rgba(96,55,3,.42));
+}
+.hero-visual::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:3;
+  pointer-events:none;
+  background:
+    linear-gradient(115deg,transparent 0 32%,rgba(255,255,255,.34) 42%,transparent 52%) border-box;
+  opacity:.45;
+  mix-blend-mode:screen;
+}
+
+/* Reflective gold framing around the physician portrait. */
+.doctor-photo{
+  border:2px solid transparent;
+  background:
+    linear-gradient(var(--ivory),var(--ivory)) padding-box,
+    linear-gradient(135deg,#8c5d12 0%,#e3b84e 24%,#fff1b8 45%,#b77b18 69%,#f0ce73 100%) border-box;
+  box-shadow:
+    0 25px 55px rgba(17,31,57,.15),
+    0 0 0 1px rgba(255,255,255,.42) inset;
+}
+
+/* Fine metallic dividers throughout the page. */
+.quick-paths,
+.services-section,
+.physician,
+.feature-split,
+.contact-section{
+  position:relative;
+}
+.quick-paths::after,
+.services-section::after,
+.physician::after,
+.feature-split::after,
+.contact-section::after{
+  content:"";
+  position:absolute;
+  left:38px;
+  right:38px;
+  bottom:0;
+  height:2px;
+  background:linear-gradient(90deg,transparent,#a66e12 8%,#f2cf78 33%,#b57b18 66%,#f3d58d 88%,transparent);
+  box-shadow:0 1px rgba(255,255,255,.5);
+  pointer-events:none;
+}
+.quick-paths>a,
+.service-card,
+.feature-panel,
+.testimonial{
+  border-color:rgba(198,139,31,.46);
+}
+.service-card,
+.quick-paths>a{
+  box-shadow:inset 0 1px rgba(255,255,255,.62),0 12px 28px rgba(22,36,65,.055);
+}
+
+/* Navy-to-gold reflected footer treatment.  Text colors remain unchanged. */
+.fixed-footer{
+  isolation:isolate;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 100% 50%,rgba(255,221,131,.92) 0%,rgba(208,150,38,.72) 12%,rgba(177,112,18,.30) 25%,transparent 47%),
+    linear-gradient(102deg,#021432 0%,#062f70 44%,#0a4a9a 68%,#7a5418 91%,#c68a22 100%);
+  border-top:2px solid transparent;
+  border-image:linear-gradient(90deg,#83560f,#f6dc94,#a66d11,#f0cb68) 1;
+  box-shadow:0 -8px 30px rgba(4,28,70,.18);
+}
+.fixed-footer::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:linear-gradient(112deg,transparent 0 57%,rgba(255,255,255,.13) 73%,transparent 84%);
+  pointer-events:none;
+}
+.fixed-footer>div{border-right-color:rgba(255,255,255,.22)}
+
+@media(max-width:1100px){
+  .side-nav a{font-size:16px;padding:16px 14px;gap:13px}
+  .top-links{gap:20px;font-size:14px}
+  .top-actions{font-size:14px}
+}
+
+@media(max-width:780px){
+  .side-nav a{font-size:17px;padding:17px 18px}
+  .hero-visual{
+    filter:
+      drop-shadow(0 -2px 0 #f7df9a)
+      drop-shadow(0 -4px 0 #bd8120);
+  }
+  .top-book{padding:11px 15px;font-size:11px}
+  .quick-paths::after,
+  .services-section::after,
+  .physician::after,
+  .feature-split::after,
+  .contact-section::after{left:18px;right:18px}
+}
+
+/* =========================================================
+   EC Med refinement v4 — isolated hero trim + separate cards
+   ========================================================= */
+
+/* Build the metallic trim as a true curved inlay instead of a shadow. */
+.hero-visual{
+  filter:none;
+  border-left:0;
+  background:linear-gradient(
+    180deg,
+    #8a5810 0%,
+    #d8a735 16%,
+    #fff0ad 34%,
+    #b87713 53%,
+    #f4d77f 72%,
+    #946012 100%
+  );
+  box-shadow:-7px 0 18px rgba(123,79,8,.20);
+}
+.hero-visual img{
+  position:absolute;
+  inset:0 0 0 6px;
+  width:calc(100% - 6px);
+  height:100%;
+  clip-path:ellipse(88% 100% at 100% 50%);
+}
+.hero-visual::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  clip-path:ellipse(88% 100% at 100% 50%);
+  background:linear-gradient(112deg,transparent 22%,rgba(255,255,255,.42) 34%,transparent 47%);
+  mix-blend-mode:screen;
+  opacity:.5;
+}
+.hero-visual::after{
+  z-index:3;
+}
+
+/* Remove the single connecting underline beneath the three quick paths. */
+.quick-paths::after{display:none}
+
+/* Give each quick-path card its own restrained reflective-gold outline. */
+.quick-paths>a{
+  border:2px solid transparent;
+  background:
+    linear-gradient(rgba(255,255,255,.94),rgba(255,255,255,.94)) padding-box,
+    linear-gradient(120deg,#8b5a0e 0%,#d8a633 24%,#fff0ae 45%,#b77816 67%,#efd078 100%) border-box;
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.72),
+    0 15px 38px rgba(22,36,65,.09);
+}
+.quick-paths>a:hover{
+  border-color:transparent;
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.78),
+    0 22px 45px rgba(22,36,65,.14),
+    0 0 0 1px rgba(255,225,145,.18);
+}
+
+@media(max-width:780px){
+  .hero-visual{
+    background:linear-gradient(90deg,#8a5810,#f5d986 46%,#9b6411);
+    box-shadow:0 -6px 16px rgba(123,79,8,.17);
+  }
+  .hero-visual img{
+    inset:6px 0 0 0;
+    width:100%;
+    height:calc(100% - 6px);
+    clip-path:none;
+  }
+  .hero-visual::before{clip-path:none}
+}
